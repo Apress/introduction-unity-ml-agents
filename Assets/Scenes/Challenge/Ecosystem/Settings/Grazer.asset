@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0933ccf6a4b9d444a21f4fd88e3f779, type: 3}
+  m_Name: Grazer
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  rewardPerStep: 0.05
+  rewardPerOffspring: 2
+  reproductionValueRequired: 1
+  reproductionChangePerSecond: 0.5
+  reproductionRadius: 2
+  reproductionSpawnRadius: 2
+  maxSpawnAttempts: 30
+  reproductionValuePerFood: 0.75
+  maxEnergy: 1
+  startingEnergy: 1
+  energyLossPerStep: 0.001
+  energyLossPerMovement: 0.002
+  role: 0
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 9
+  prefab: {fileID: 2961908319154974409, guid: da1ce00d86868df4f94b972fc4a364b7, type: 3}

@@ -1,0 +1,43 @@
+behaviors:
+  EcosystemAgentPredator:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 32
+      learning_rate: 0.001
+    network_settings:
+      normalize: false
+      hidden_units: 256
+      num_layers: 2
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+      curiosity:
+        strength: 0.01
+    keep_checkpoints: 10
+    max_steps: 80000000
+    time_horizon: 512
+    summary_freq: 50000
+    checkpoint_interval: 100000
+    threaded: true
+  EcosystemAgentGrazer:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 32
+      learning_rate: 0.001
+    network_settings:
+      normalize: false
+      hidden_units: 256
+      num_layers: 2
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+      curiosity:
+        strength: 0.01
+    keep_checkpoints: 10
+    max_steps: 80000000
+    time_horizon: 512
+    summary_freq: 50000
+    checkpoint_interval: 100000
+    threaded: true
